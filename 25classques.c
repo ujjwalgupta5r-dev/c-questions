@@ -6,18 +6,19 @@ int factorial(int n) {
     return factorial(n - 1) * n ;  
 }
 
-int main() {
+int main(){
     int num, result;
 
     printf("Enter a number: ");
     scanf("%d", &num);
 
     if (num < 0) {
-        printf("Factorial of a negative number doesn't exist.\n");
-    } else {
+        printf("Factorial of a negative number doesn't exist.");
+    } 
+    else {
         result = factorial(num);
-        printf("Factorial of %d = %d\n", num, result);
+        printf("Factorial of %d = %d", num, result);
     }
-
     return 0;
 }
+
